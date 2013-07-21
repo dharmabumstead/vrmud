@@ -1,0 +1,25 @@
+/* elbank.c */
+#include "/players/slider/include/slider.h"
+
+inherit "room/room";
+
+reset(arg)
+{
+   if(!present("teller"))
+      move_object(clone_object(OBJ+"bankmach"), this_object());
+
+   if (arg) return;
+}
+
+create() {
+    set_short("First Bank of Elwoode");
+
+    set_long(
+"You are in the First Bank of Elwoode's automated teller station.  A door\n"+
+"leads south back on Elwoode's main street.\n");
+    add_exit(ROOMS+"elwood02", "south");
+
+    set_light(1);
+    reset(0);
+}
+

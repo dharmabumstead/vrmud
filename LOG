@@ -1,0 +1,65 @@
+players/slider/rooms/turnout.c line 9:syntax error
+players/slider/obj/beacon.c line 141:syntax error
+players/slider/obj/beacon.c line 143:Illegal LHS
+players/slider/obj/beacon.c line 143:syntax error
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
+players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
+players/slider/rooms/control.c line 34: parse error before ", \
+players/slider/rooms/control.c line 42: End of file in string before us!\

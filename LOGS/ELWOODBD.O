@@ -1,0 +1,9 @@
+#std/board_ob.c
+short_desc "A bulletin board"
+MINIMUM_LEVEL 1
+MAX_MESSAGES 30
+MIN_REMOVE_LEVEL 1
+messages "Hey!(Slider, Jun  4):**Where IS everyone? The first person to post after this note gets a surprise! Slider**OK, surprize me.(Rayn, Jun  4):**Well, what is it?**Re: OK , surprize....(Slider, Jun  8):**Well, you've got to remain a player long enough to find out! Hee hee!Slider**SURPRISE!!!(Xena, Sep 28):**May I *PLEASE* have a surprise? Pretty please? I've been good!Xena**5 Hello :)(Stigma, Sep 30):**I'm the only one on. Is this a mud or what?**"
+num_messages 5
+who 
+current 4

@@ -1,0 +1,5 @@
+#players/slider/obj/tshirt.c
+a_strengths ({"is more a hinderance than protection.","is almost useless.","doesn't offer much protection at all.","has a small amount of protective value.","offers a moderate amount of protection.","offers a fair amount of protection.","offers good protection.","would protect you very well.","would offer extremely good protection.","would offer excellent protection.","must have been blessed with magic.",})
+long_desc "It's a brand new ONLY PLAYER ON THE MUD! t-shirt (worn)"
+short_desc "a ONLY PLAYER ON THE MUD! t-shirt (worn)"
+short_desc_w "a ONLY PLAYER ON THE MUD! t-shirt (worn) (worn)"

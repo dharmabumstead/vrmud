@@ -1,0 +1,9 @@
+#std/board_ob.c
+short_desc "A bulletin board"
+MINIMUM_LEVEL 1
+MAX_MESSAGES 30
+MIN_REMOVE_LEVEL 1
+messages "heh(Slider, Nov 20):**heh**albert(Miraclemax, Dec  1):**is a snapperhead(and likes large breasted women)**Re: albert(Slider, Dec  4):**I like to go swimmin'With bow legged wimminAnd swim between their legs....**Yes he does!(Xena, May 28):**Yes he does! (and he likes large breasted women too!)**Supercat: Read This!(Slider, Sep 15):**Welcome. Have fun and look around. Let me know when you're on andwe can play a game of chess. Type 'i' for inventory. Your tshirt is magic - just type 'slider' to come back here. Slider**"
+num_messages 5
+who 
+current 3

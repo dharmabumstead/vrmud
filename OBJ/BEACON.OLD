@@ -1,0 +1,148 @@
+/***************************************************************************
+ * NAME:                                                                   *
+ *    beacon.c                                                             *
+ * DESCRIPTION:                                                            *
+ *    Slider's Magic Beacon Scroll                                         *
+ * VERSION:                                                                *
+ *    1.2                                                                  *
+ * ENVIRONMENT:                                                            *
+ *    End Of The Line - LPMud 3.1.2-DR                                     *
+ * UPDATE HISTORY                                                          *
+ *    04/01/93  Slider  Initial version                                    *
+ *    04/10/93  Slider  Added peek, list, and level checking               *
+ ***************************************************************************/
+
+string destination;
+int charges;
+ 
+id(str) {
+    return ((str== "beacon") || (str=="scroll"));
+}
+
+init() {
+   /* Add our commands */
+   add_action("set_beacon", "set");
+   add_action("recall_beacon", "recall");
+   add_action("charge_beacon", "charge");
+   add_action("list_beacon", "list");
+   add_action("peek_beacon", "peek");
+}
+
+
+short() {
+    return("Slider's Beacon scroll");
+}
+ 
+long() {
+  write(
+"This is Slider's Beacon Scroll.  You can 'set beacon' to remember the current\n"+
+"location, 'recall beacon' to return to that location, 'charge beacon' to see\n"+
+"how many charges it has left, 'list beacon' to show the beacon's current \n"+
+"setting, and 'peek beacon' to look into the destination room.\n");
+}
+ 
+create()  {
+   destination = "/room/newroom/square";
+   charges = 6;
+}
+ 
+get() {
+    if(this_player()->query_level() < 21) {
+        write("You burn your hands trying to pick it up!\n");
+        say(this_player()->query_name() +
+           " gets fried trying to pick up a Slider's Beacon scroll!\n");
+        return 0;
+    }
+
+    return 1;
+}
+ 
+drop() {
+    return 0;
+}
+ 
+set_beacon(str) {
+   if (environment(this_object()) == this_player()) {
+
+      if(id(str)) {
+        destination=file_name(environment(environment(this_object())));
+
+        /* Write player's environment message */
+        write("You set the Slider's Beacon Scroll.\n");
+        say(this_player()->query_name()+" sets a Slider's Beacon scroll.\n");
+        return 1;
+      }
+   }
+}
+
+recall_beacon(str) {
+    if (environment(this_object()) == this_player()) {
+       if(id(str)) {
+           write("You read the scroll and are transported to....\n");
+           say(this_player()->query_name()+" reads a Slider's Beacon scroll"+
+              " and disappears!\n");
+           move_object(this_player(), destination);
+           this_player()->look();
+
+           if(this_player()->query_level() < 21) {
+              if(--charges == 0) {
+                 write("The Slider's Beacon crumbles to dust in your hands!\n");
+                 destruct(this_object());
+              }
+           }
+        }
+        return(1);
+    }
+    return 0;
+}
+
+charge_beacon(str) {
+    if (environment(this_object()) == this_player()) {
+       if(id(str)) {
+          write("The letters on the scroll blur and form the number " +
+             charges + ".\n");
+          return(1);
+       }
+    }
+}
+
+list_beacon(str) {
+    object destobj;
+
+    if (environment(this_object()) == this_player()) {
+       if(id(str)) {
+          destobj = find_object(destination);
+
+          if(destobj) {
+              write("The beacon is set for: " + destobj->short() + "\n");
+              say(this_player()->query_name()+" checks the Slider's Beacon.\n");
+          }
+       }
+        return(1);
+    }
+    return 0;
+}
+
+
+peek_beacon(str) {
+    object destobj;
+
+    if (environment(this_object()) == this_player()) {
+       if(id(str)) {
+          destobj = find_object(destination);
+
+          if(destobj) {
+              write("\nThe scroll seems to blur and then disappear.  You see:\n"+
+"------------------------------------------------------------------------------\n");
+              say(this_player()->query_name()+"'s vision blurs as "+
+                subjective(this_player())+" gazes into the Slider's Beacon scroll.\n");
+              destobj->long();
+write("------------------------------------------------------------------------------\n");
+             write("....the vision fades and the scroll swims back into focus.\n\n");
+          }
+       }
+        return(1);
+    }
+    return 0;
+}
+
