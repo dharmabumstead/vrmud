@@ -23,7 +23,10 @@ town and south towards the center of town.  A dark alley gapes hollowly\n\
 to the west.\n");
  
    add_exit(ROOMS+"elwood03", "south");
-   add_exit(ROOMS+"elwood05", "north");
+
+/* This must not be done, removed since was getting player bug things
+   add_exit(ROOMS + "elwood05","north");
+*/
    add_exit(ROOMS+"elwood4a", "west");
  
    add_item("street",

@@ -35,5 +35,5 @@ Remember, this is only a game!\
    ");
  
    set_light(1);
-   reset(0);
+   reset(0)  //*** deliberate error to check update ***
 }

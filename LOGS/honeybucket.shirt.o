@@ -1,0 +1,4 @@
+#/players/slider/obj/tshirt.c
+long_desc "It's a brand new Manimal t-shirt (worn)"
+short_desc "a Manimal t-shirt (worn)"
+short_desc_w "a Manimal t-shirt (worn) (worn)"

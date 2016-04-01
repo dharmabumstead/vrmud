@@ -24,14 +24,15 @@ create() {
     set_long(
 "You are on an overgrown path winding through a lush forest.  The sounds\n"+
 "of birds and other wildlife fill you with a sense of well being.  The\n"+
-"trail continues west, and another east-west trail is to the north.\n");
+"trail continues west.\n");
     add_item("birds", "Colorful birds are everywhere!");
     add_item("wildlife", "If you stand still and watch, you can "+
              "occasionally catch a glimpse\nof some strange and "+
              "beautiful creatures making their way through the woods.\n"); 
-    add_exit("/room/newroom/main10", "north");
+    add_exit("/room/newroom/main11", "east");
     add_exit(ROOMS+"path2", "west");
     set_light(1);
+    add_property("outside");  // added by Frijoles
     reset(0);
 }
 

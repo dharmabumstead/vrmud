@@ -1,3 +1,4 @@
+/* Modified it so it wouldn't leave your area - Frij */
 inherit "/std/light";
 inherit "/std/light";
 /* bugbear.c */
@@ -15,7 +16,8 @@ create() {
     set_spell_dam(0);
     set_level(11);
     set_whimpy(1);
-    set_move_at_reset(1);
+	set_allowed_rooms("/players/slider/rooms/");
+	set_speed(20);
     set_al(-100);
     add_money(500);
 }

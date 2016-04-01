@@ -1,0 +1,6 @@
+#define ROOMS "/players/slider/rooms/"
+#define MONSTERS "/players/slider/monsters/"
+#define OBJ "/players/slider/obj/"
+#define TEXT "/players/slider/text/"
+#define LOGS "/players/slider/logs/"
+#define ETC "/players/slider/etc/"

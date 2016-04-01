@@ -1,9 +1,8 @@
-#std/board_ob.c
-short_desc "A bulletin board"
+#/std/board_ob.c
 MINIMUM_LEVEL 1
 MAX_MESSAGES 30
 MIN_REMOVE_LEVEL 1
-messages "Hey!(Slider, Jun  4):**Where IS everyone? The first person to post after this note gets a surprise! Slider**OK, surprize me.(Rayn, Jun  4):**Well, what is it?**Re: OK , surprize....(Slider, Jun  8):**Well, you've got to remain a player long enough to find out! Hee hee!Slider**SURPRISE!!!(Xena, Sep 28):**May I *PLEASE* have a surprise? Pretty please? I've been good!Xena**5 Hello :)(Stigma, Sep 30):**I'm the only one on. Is this a mud or what?**"
-num_messages 5
+messages "Helloooooo(Freddy, Sun Oct  5 19:06:48 1997):**Echo.. echo.. ech.. ec..e...**Time capsule(Slider, Fri Feb 12 23:32:23 1999):**Welcome to the land time forgot...**Ping(Slider, Sat Jan 12 20:29:34 2002):**Welcome to VR...2002 style. Peace out.Slider**Hi(Po, Sun Aug  3 03:58:53 2003):**hello there, i see not many people come here...**Hi!(Squiggy, Sun Sep 14 18:08:48 2003):**Squiggy here, Slider's son. Wazzup!**Ping...(Slider, Sat Oct  8 04:52:08 2005):**...ping....ping....ping......hello?**Area #1?(Rhayam, Fri Oct  3 14:18:49 2008):**Hmm, I wonder if this is my first area outside town. B^)-Rhayam.**Ping(Slider, Wed Mar  4 13:09:28 2015):**Pong.**"
+num_messages 8
 who 
-current 4
+current 6

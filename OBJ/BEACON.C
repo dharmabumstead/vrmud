@@ -46,7 +46,7 @@ long() {
 
 create()  {
    destination = "/room/newroom/square";
-   charges = 6;
+   charges = 999;
 }
 
 get() {

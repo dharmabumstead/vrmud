@@ -31,6 +31,7 @@ create() {
 "the earth.  You wonder where it leads.....\n");
 
     set_light(1);
+    add_property("outside");  // added by Frijoles
     reset(0);
 }
 

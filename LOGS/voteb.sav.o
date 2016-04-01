@@ -1,0 +1,10 @@
+#/players/slider/obj/voteb.c
+issues ([])
+choices ([])
+votes ([])
+issue_keys ([])
+SEQ_KEY 4
+new_issue_title "Voting to vote..."
+new_issue_text ""
+temp_text ""
+short_desc "a voting booth"

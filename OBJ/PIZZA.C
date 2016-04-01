@@ -8,8 +8,10 @@
  * ENVIRONMENT:                                                            *
  *    Virtual Realities - LPMud 3.1.2-DR                                   *
  * UPDATE HISTORY                                                          *
- *    04/02/93  JSB  Initial version                                       *
+ *    04/02/1993  Slider  Initial version                                       *
+      08/27/2002  Slider  Add inherit of std/object
  ***************************************************************************/
+inherit "std/object";
 
 int slices;           /* number of pieces! */
 int bvalue;           /* initial value */
@@ -32,6 +34,7 @@ init()
 {
    /* Add our commands */
    add_action("eat_pizza", "eat");
+   return(1);
 }
 
 id(str)

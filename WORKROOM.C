@@ -26,6 +26,7 @@ reset(arg)
 init()
 {
     if((this_player()->query_real_name() != "slider" && 
+       this_player()->query_real_name() != "squiggy" &&
        this_player()->query_real_name() != "supercat" &&
 	   this_player()->query_real_name() != "xena") && 
        (privacy)) {

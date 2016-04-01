@@ -13,6 +13,9 @@ trail almost completely from the elements.  An opening in the vegetation\n\
 lies to the north.\n");
  
     add_exit(ROOMS+"garg001", "north");
+    /* what the fuck is this? COMMENT any changes, dammit!  - Slider 2/16/2000 */
+	// Sorry Slider, the exit was mine to lead to Barrowmere. - Frij
+	add_exit("/room/circ/roads/west1b","south");
     add_exit(ROOMS+"path4", "west");
     add_exit(ROOMS+"path2", "east");
  
@@ -31,6 +34,7 @@ what may be beyond the vegetation.\n");
 "There's an opening in the vegetation that leads north.\n");
  
    set_light(1);
+    add_property("outside");  // added by Frijoles
    reset(0);
 }
  

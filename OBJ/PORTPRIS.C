@@ -1,3 +1,4 @@
+inherit "/std/move";
 /***************************************************************************
  * NAME:                                                                   *
  *    portaprison.c                                                        *
@@ -11,9 +12,10 @@
  *    04/02/93  Slider  Initial version                                    *
  *    04/03/93  Slider  Added login/logoff notification                    *
  *    04/27/93  Slider  Added notify toggle, owner name, and post killer   *
+      02/09/00  Slider  Fixed say bug - lotta mudlib changes in 7 years!   *
  ***************************************************************************/
-status notify;
-string owner_name;
+status notify = 1;
+string owner_name = "slider";
 
 init() {
     object owner;
@@ -26,7 +28,7 @@ init() {
     add_action("gshout", "gshout");
     add_action("note", "note");
     add_action("say", "say");
-    add_action("say", "'",1);
+
     add_action("quit", "quit");
 
     if(owner_name) owner = find_living(owner_name);
@@ -35,20 +37,7 @@ init() {
         tell_object(owner, this_player()->query_name() +
            " has just logged in.\n");
     }
-    return(0);
-}
-
-say (str) {
-    object owner;
-
-    owner = find_living("slider");
-
-    if((owner) && (notify)) {
-        tell_object(owner, this_player()->query_name() +
-           " says: '" + query_verb() + "'\n");
-    }
-
-    return(0);
+    return(1);
 }
 
 

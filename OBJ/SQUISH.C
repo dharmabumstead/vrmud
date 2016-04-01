@@ -151,3 +151,5 @@ query_value()
    return(80);
 }
 
+
+query_name() { return "Squish ball"; }

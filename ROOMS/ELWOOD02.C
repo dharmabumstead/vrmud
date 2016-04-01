@@ -24,4 +24,3 @@ create() {
     set_light(1);
     reset(0);
 }
-

@@ -21,7 +21,9 @@ disgust.  The alley continues further to the west and exits to the east.\n\
    ");
  
    add_exit(ROOMS + "elwood04","east");
+/* This must not be done, removed since was getting player bug things
    add_exit(ROOMS + "elwood4b","west");
+*/
  
    add_item("debris", "\
 See 'trash'\

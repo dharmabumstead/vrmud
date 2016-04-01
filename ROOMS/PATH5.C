@@ -24,6 +24,7 @@ create() {
 "'Village of Elwoode'.");
 
     set_light(1);
+    add_property("outside");  // added by Frijoles
     reset(0);
 }
 

@@ -11,6 +11,7 @@ inherit "/std/move";
  * UPDATE HISTORY
  *    11/19/94  Slider  Initial version
  *    10/22/95  Slider  Added save/load object
+ *    10/18/97  Slider  Hacking stuff (to be continued)
  ***************************************************************************/
 #include "/players/slider/include/slider.h"
 #define SAVE_NAME "/players/slider/logs/voteb.sav"
@@ -123,10 +124,14 @@ list_issues() {
    int i;
 
    titles = keys(issue_keys);
+  write("The list of issues to vote on:\n");
+ 
+
 
    for(i=0;i<sizeof(titles);i++)
       write(titles[i] + ": " + issue_keys[titles[i]] + "\n");
 
+   if(i==0) write("The booth contains no issues to vote on.\n");
    return(1);
 }
 

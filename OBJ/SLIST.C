@@ -1,4 +1,3 @@
-inherit "/std/move";
 /***************************************************************************
  * NAME:                                                                   
  *    slist.c                                                              
@@ -9,63 +8,33 @@ inherit "/std/move";
  * ENVIRONMENT:                                                            
  *    Virtual Realities -  LPMud 3.1.2-DR                                  
  * UPDATE HISTORY                                                          
- *    04/06/93  Slider  Initial version                                    
- *    08/14/93  Slider  Fixed bug in sort routine                          
- *                      Now sorts by name within levels                    
- *    12/07/94  Slider  Fixed sort routine
+ *    04/06/1993  Slider  Initial version                                    
+ *    08/14/1993  Slider  Fixed bug in sort routine                          
+ *                        Now sorts by name within levels                    
+ *    12/07/1994  Slider  Fixed sort routine
+      08/27/2002  Slider  Fixed some minor formatting bugs
+ *    11/01/2010  Slider  Removed environment check to allow cmd use
  ***************************************************************************/
 status notflag;
 
-init() {
-    add_action("slist", "slist");
-}
-
-id(str) {
-    return ((str=="slister"));
-}
-
-get() {
-    if(this_player()->query_level() < 21) {
-       say(capitalize(this_player()->query_name()) + " tries to pick up an "+
-          "slister and burns " + this_player()->query_possessive() +
-          " hand!\n");
-       write("Ow!  It's too hot to pick up!\n");
-       return 0;
-    }
-    return 1;
-}   
-
-short() {
-    return("an slister");
-}
-
-long() {
-    write("This is a Slider's player lister.  Just type 'slist'.\n");
-    return(0);
-}
-
-slist(args) {
+main(args) {
 
     int i, items, a;
     object *players;
     object recobj;
     string str, str2;
 
-    if (environment(this_object()) != this_player())
-      return 0;
 
     say(capitalize(this_player()->query_name()) + " consults an slister.\n");
 
     /* Get the list of active players */
     players = sort_array(users(),"sort_by_level",this_object());
     write(
-"===============================================================================
-\n"+
-"NAME          LEV  AGE  S    EXPER  ST IN DX CN   HP/MAX   SP/MAX  MONEY  FLAGS
-\n"+
-"-------------------------------------------------------------------------------
-\n");
+"==============================================================================\n"+
+"NAME          LEV  AGE  S    EXPER  ST IN DX CN   HP/MAX   SP/MAX  MONEY FLAGS
+"+
 
+"------------------------------------------------------------------------------\n");
     /* Check all the active players for the item */
     for(i = 0; i < sizeof(players); i++) {
         str = players[i]->query_real_name();
@@ -132,12 +101,11 @@ slist(args) {
     }
 
 write (
-"-------------------------------------------------------------------------------
-\n"+
+"------------------------------------------------------------------------------\n"+
 "FLAGS:  B  Blind         F  Stuffed   S  Soaked  | SEX:  M  Male\n"+
 "        E  Editing       G  Frog      I  Drunk   |       F  Female\n"+
 "        () Invisible    ><  Ghost                |       I  It\n"+
-"===============================================================================
+"==============================================================================
 \n");
 
     return 1;

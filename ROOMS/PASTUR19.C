@@ -102,7 +102,7 @@ nap_5() {
 A man descends from the sky on a flaming pie!  He looks vaguely familar to\n\
 you, but you're not sure why.  He smiles at you for a moment, and then he\n\
 speaks.  He says something, but you can't make out what it is.  His voice\n\
-sounds like it's playing backwards!\n");
+sounds like it's coming from underwater!\n");
    tell_room(environment(NAP_PLAYER), NAP_NAME +
       " is sleeping soundly.\n", ({NAP_PLAYER}));
    NAP_PLAYER->heal_self(10);

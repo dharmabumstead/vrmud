@@ -22,12 +22,20 @@ inherit "/std/move";
  *    12/28/94  Slider  Added 'open' and 'close' to enabled dynamically
  *                      closing down bank if necessary. Still need to 
  *                      update the rest of this thing!
+ *	  02/12/96	Slider	Added 'more' support to report output
+ *     6/5/97  Frijoles  Moved to Barrowmere, change description for city
+ *    11/-/97  Frijoles  Attempting a clean way to raise max balance
  ***************************************************************************/
 // Added front slash to SAVE_NAME - Picard 12/30/94
 #define SAVE_NAME "/players/slider/logs/slidrbnk"
 #define LOG_NAME "slider.bank"
 #include "/players/slider/include/slider.h"
+/*
 #define MAX_BALANCE 30000
+*/
+#define BALANCE_CUTOFF_LEVEL 25 // max balance stops raising at this point
+#define MAX_BALANCE find_balance()
+#define BALANCE_MULTIPLIER 2.75
 
 int closed;
 string *list;
@@ -45,7 +53,7 @@ short() { return short_desc; }
 /************************************************************/
 long() {
   write(
-"This is a First Bank of Elwoode 24-hour teller machine.  To open an account, \n"+
+"This is a Barrowmere ahead-of-time teller machine. To open an account, \n"+
 "type 'open <amount>'.  You can also use 'balance', 'withdraw <amount>', and\n"+
 "'deposit <amount>'.  Withdrawing all of your funds closes your account.\n");
 
@@ -82,7 +90,7 @@ long() {
 /************************************************************/
 create()  {
    list = allocate(0);
-   set_short("a teller machine");
+   set_short("a 24-hour bank machine");
    restore_object(SAVE_NAME);
 }
 
@@ -170,7 +178,7 @@ deposit_cash(str) {
    }
 
    if((record = find_account(this_player()->query_real_name())) == -1) {
-      write("You have no account with First of Elwoode!\n");
+	write("You have no account with the Barrowmere Bank!\n");
       return(1);
    }
    if(closed) {
@@ -199,7 +207,7 @@ deposit_cash(str) {
    balance+=amt;
 
    list[record] = this_player()->query_real_name() + " " + balance;
-   write("Save name is: " + SAVE_NAME + "\n");
+   if(wizardp(this_player())) write("Save name is: " + SAVE_NAME + "\n");
    save_object(SAVE_NAME);
 
    log_file(LOG_NAME, ctime()+" "+capitalize(name)+" deposits "+amt+
@@ -229,7 +237,7 @@ withdraw_cash(str) {
    }
 
    if((record = find_account(this_player()->query_real_name())) == -1) {
-      write("You have no account with First of Elwoode!\n");
+	write("You have no account with the Barrowmere Bank!\n");
       return(1);
    }
 
@@ -284,13 +292,13 @@ bank_balance(str) {
    }
 
    if((record = find_account(name)) == -1) {
-      write(capitalize(name) + " has no account with First of Elwoode!\n");
+write(capitalize(name) + " has no account with the Barrowmere Bank.\n");
       return(-1);
    }
 
    sscanf(list[record], "%s %d", dummy, balance);
    write("Our records show that " + capitalize(name)+"'s balance stands at " + 
-      balance+ " coins.\n");
+      balance+ " coins.\nYour max bank deposit is "+MAX_BALANCE+" coins.\n");
 
    if(str) {
       log_file(LOG_NAME, ctime() + " "+PLAYER_NAME + " checks " +
@@ -350,7 +358,7 @@ open_account(str) {
 
       list+=({this_player()->query_real_name() + " " + amt});
       save_object(SAVE_NAME);
-      write("Thanks for banking with First Bank of Elwoode!\n");
+	write("Thanks for banking with the Barrowmere Bank!\n");
 
       /* Check to see if we have a bank card (sp bancard to avoid
          confusion w/Drfeelgood's old one) */
@@ -369,29 +377,33 @@ open_account(str) {
 
 /************************************************************/
 list_accounts() {
-   int counter, amount, total;
-   string *templist;
+   int counter, amount, total, lines, i;
+   string *templist, *output;
    string name;
 
    if((this_player()->query_level()) <21) return 0;
 
    total = 0;
+   i = 0;
 
    templist = sort_array(list,"sort_by_name",this_object());
 
-   write("========================\n");
-   write(pad("NAME", 15) + " " + pad("BALANCE", -8)+"\n");
-   write("------------------------\n");
+   output = allocate(sizeof(templist) + 20);
+
+   output[i++] = sprintf("%s", "========================\n");
+   output[i++] = sprintf("%s", pad("NAME", 15) + " " + pad("BALANCE", -8)+"\n");
+   output[i++] = sprintf("%s", "------------------------\n");
 
    for(counter = 0; counter < sizeof(templist); counter++) {
       sscanf(templist[counter], "%s %d", name, amount);
-      write(pad(capitalize(name), 15) + " " + pad(amount, -8)+"\n");
+      output[i++] = sprintf("%s", pad(capitalize(name), 15) + " " + pad(amount, -8)+"\n");
       total+=amount;
    }
 
-   write("------------------------\n");
-   write("TOTAL "+pad(total, -18)+"\n");
-   write("========================\n");
+   output[i++] = sprintf("%s", "------------------------\n");
+   output[i++] = sprintf("%s", "TOTAL "+pad(total, -18)+"\n");
+
+   more(implode(output, ""));
    
    log_file(LOG_NAME,ctime()+" "+capitalize(this_player()->query_real_name())+
       " lists accounts.\n");
@@ -501,11 +513,9 @@ create_account(str) {
    return 1;
 }
 
-
-sort_by_name(ob1,ob2) {
-    return (ob1 > ob2);
+int sort_by_name( object ob1, object ob2) {
+    return strcmp((string) ob1, (string) ob2);
 }
-
 
 close_bank() {
    if(this_player()->query_level() >299) {
@@ -525,3 +535,9 @@ open_bank() {
    return(0);
 }
 
+int find_balance() {
+	int tmp;
+	tmp = this_player()->query_level();
+	if(tmp > BALANCE_CUTOFF_LEVEL) tmp = BALANCE_CUTOFF_LEVEL;
+	return to_int(to_float(tmp*(BALANCE_MULTIPLIER)))*1000;
+}

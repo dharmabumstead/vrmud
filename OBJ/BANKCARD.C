@@ -1,5 +1,4 @@
 inherit "/std/move";
-/* inherit "/std/move";
 /***************************************************************************
  * NAME:                                                                   
  *    bankard.c                                                            
@@ -12,6 +11,7 @@ inherit "/std/move";
  * UPDATE HISTORY                                                          
  *    04/27/93  Slider Initial version                                     
  *    12/22/93  Slider Added remote wiz balance
+ *    06/05/97  Changed descriptions for new city - Frij
  ***************************************************************************/
 #define BANK_LOC "/players/slider/rooms/elbank"
 string short_desc;
@@ -24,7 +24,7 @@ short() { return short_desc; }
 
 long() {
   write(
-"This is a First Bank of Elwoode 24-hour bank card.  With it you can use \n"+
+"This is a Barrowmere Bank notice card. It looks nice. With it you can use \n"+
 "'balance', 'withdraw <amount>', and 'deposit <amount>' for quick access\n"+
 "to your cash from anywhere!  Please note that withdrawing all of your \n"+
 "funds closes your account.\n");

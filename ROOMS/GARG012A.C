@@ -5,7 +5,7 @@ inherit "room/room";
 
 reset(arg)
 {
-   if(!present("spider")) {
+   while(!present("spider 3")) {
       move_object(clone_object(MONSTERS+"sspider"), this_object());
     }
 

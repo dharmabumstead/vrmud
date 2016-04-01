@@ -2,8 +2,8 @@
 /* glommed from Gudu and modified 4/2/93 */
 /* update 12/10/93 */
  
-#define ENTRY "/room/newroom/main10"
-#define ENTRY_LONG "A winding path leads south through the trees...\n"
+#define ENTRY "/room/circ/roads/west1b"
+#define ENTRY_LONG "A small path leads north through some trees.\n"
  
 reset(arg)
 {
@@ -23,6 +23,6 @@ create() {
  
     if( sscanf( old_long, "%s"+ENTRY_LONG, tmp) != 1) {
        ENTRY->set_long( old_long+ENTRY_LONG);
-       ENTRY->add_exit("/players/slider/rooms/path1", "south");
+	ENTRY->add_exit("/players/slider/rooms/path3","north");
     }
 }

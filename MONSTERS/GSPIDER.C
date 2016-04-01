@@ -1,5 +1,6 @@
 /* gspider.c */
 /* modified 11/7/94 */
+// Changes made to fit guidelines and power of the treasures - Picard 8/10
 #include "/players/slider/include/slider.h"
 
 inherit "/obj/monster";
@@ -9,7 +10,8 @@ init() {
     if(!present("hide"))
        move_object(clone_object(OBJ+"gspiplat"), this_object());
 
-    if(!present("stinger"))
+// Added clonep check cuz of stupid unique bug - Picard: Easter of 97
+    if(!present("stinger") && clonep(this_object()))
        move_object(clone_object(OBJ+"gstinger"), this_object());
 }
 
@@ -25,13 +27,13 @@ create() {
     set_level(20);
     set_spell_mess1("The giant spider bathes its victim in acidic venom!");
     set_spell_mess2("The acidic venom of the giant spider burns into your skin!");
-    set_spell_chance(20);
-    set_spell_dam(40);
+    set_spell_chance(35);
+    set_spell_dam(60);
     set_al(-1000);
     set_aggressive(1);
-    add_money(2000);
     init();
     command("wear hide");
     command("wield stinger");
     set_ac(17);
+    set_wc(30);
 }

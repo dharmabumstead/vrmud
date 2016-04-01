@@ -72,13 +72,8 @@ change(str) {
 return 1;
 }
  
-give(){ 
- write("You can not give this away!\n");
- return 1;
-}
- 
 drop(){
- write("You can not drop this!\n");
+write("You can not drop this!"+ctime(time()) + "\n");
  return 1;
 }
  

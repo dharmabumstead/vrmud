@@ -45,6 +45,7 @@ exit() {
    object cowpie, torch;
    int dest_flag;
 
+   if(userp(PLAYER)) // Picard 4/18/98 - moving monster bug.
    log_file("slider.newbie", ctime()+" "+PLAYER_NAME+"("+
        PLAYER->query_level()+") exits area\n");
 

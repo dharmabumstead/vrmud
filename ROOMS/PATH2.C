@@ -31,6 +31,7 @@ south. Sounds like....cows?\n");
     add_exit(ROOMS+"path3", "west");
     add_exit(ROOMS+"path1", "east");
     set_light(1);
+    add_property("outside");  // added by Frijoles
     reset(0);
 }
  

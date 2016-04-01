@@ -8,8 +8,10 @@
  * ENVIRONMENT:                                                            *
  *    Virtual Realities -  LPMud 3.1.2-DR                                  *
  * UPDATE HISTORY                                                          *
- *    04/06/93  Slider  Initial version                                    *
+ **04/06/1993   Slider  Initial version                                    *
+      08/27/2002   Slider   Added inherit of std/object
  ***************************************************************************/
+inherit "std/object";
 status notflag;
 
 init() {

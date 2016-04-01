@@ -16,7 +16,7 @@ create() {
 
     set_long(
 "The devastation is almost complete here.  Nothing remains of the forest\n"+
-"at this point save for a few smoking tree stumps.  The scorched eartth\n"+
+"at this point save for a few smoking tree stumps.  The scorched earth\n"+
 "crunches under your feet as you make your way along here.\n");
     add_exit(ROOMS+"path6-4", "north");
     add_exit(ROOMS+"path6-2", "south");

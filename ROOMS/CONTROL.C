@@ -25,11 +25,10 @@ leads east into the bestiary proper.\n\
    add_exit(ROOMS+"bestiary","east");
 
    add_item("box", "\
-A standard, corrugated cardboard box. Oddly enough, it's labeled 'box'.\
-   ");
 
-   add_item("drywall", "\
-It's, you know - drywall! As in unifinished, and pretty boring to look at.\
+   add_item("drywall", \
+"It's, you know - drywall! As in unfinished, and pretty boring to look at.\
+   \n");
  
   add_item("equipment", \
 It looks expensive and obscenely complex. Most of it is still in the box.\n");

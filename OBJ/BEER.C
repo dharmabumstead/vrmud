@@ -24,7 +24,7 @@ string long_desc;     /* Long description holder */
  
 create()
 {
-   drinks = 1;
+   drinks = 6;
    bvalue = 3000;
    isopen = 0;
  
@@ -188,7 +188,7 @@ drink_beer(string thing)
          }
  
          /* See if this drink will empty the can */
-         drink_alco(18);
+         this_player()->drink_alco(18);
  
          if((--drinks) == 0)
          {

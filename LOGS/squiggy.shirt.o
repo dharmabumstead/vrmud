@@ -1,0 +1,9 @@
+#/players/slider/obj/tshirt.c
+long_desc "It's a brand new \"Don't mess with me - Slider's my dad!\" t-shirt (worn)"
+name "t-shirt"
+short_desc "a \"Don't mess with me - Slider's my dad!\" t-shirt (worn)"
+short_desc_w "a \"Don't mess with me - Slider's my dad!\" t-shirt (worn) (worn)"
+type "other"
+weight 1
+id_list ({"t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other",})
+counter 389

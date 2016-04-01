@@ -17,9 +17,10 @@ create() {
 "jaws.  Its eight hairy legs make a hideuos scrabbling noise on the hard cavern\n"+
 "floor as it moves.\n");
     set_level(14);
+    set_aggressive(1); // The treasures need to be harder to get. - Picard
     set_spell_mess1("The spider bathes its victim in acidic venom!");
     set_spell_mess2("The venom of the spider burns into your armor!");
-    set_spell_chance(20);
+    set_spell_chance(50);  // changed from 20 to 50 per guidelines -Picard
     set_spell_dam(10);
     set_al(-300);
     add_money(850);

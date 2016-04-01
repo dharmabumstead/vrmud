@@ -23,7 +23,8 @@ eat_cowpie(str) {
    if(PLAYER->query_level() >5) {
       write("You attempt to eat the cowflop.  Blech!  You feel ill!\n");
       say(PLAYER_NAME+" tries to eat a cowpie and gets sick!!\n");
-      PLAYER->add_hp(-5);
+	PLAYER->add_hp(5);
+	PLAYER->add_sp(3);
       log_file(LOGFILE, ctime()+" "+PLAYER_NAME+"("+PLAYER->query_level()+") "+
          "tries to eat a cowpie!\n");
       return(1);

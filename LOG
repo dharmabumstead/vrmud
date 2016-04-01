@@ -1,65 +1,113 @@
-players/slider/rooms/turnout.c line 9:syntax error
-players/slider/obj/beacon.c line 141:syntax error
-players/slider/obj/beacon.c line 143:Illegal LHS
-players/slider/obj/beacon.c line 143:syntax error
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/bankcard.c line 3: Warning: /* found in comment. before  inherit "/std/move"
-players/slider/obj/tshirt.c line 89: Warning: move_or_destruct() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/obj/tshirt.c line 89: Warning: move() inherited from both std/move.c and obj/armour.c; using the definition in obj/armour.c. before the end of file
-players/slider/rooms/control.c line 34: parse error before ", \
-players/slider/rooms/control.c line 42: End of file in string before us!\
+players/slider/cmd/lookup.c line 12: Undefined variable 'LT_MON'
+players/slider/cmd/lookup.c line 12: Undefined variable 'LT_MDAY'
+players/slider/cmd/lookup.c line 12: Undefined variable 'LT_YEAR'
+players/slider/cmd/lookup.c line 13: Undefined variable 'LT_HOUR'
+players/slider/cmd/lookup.c line 13: Undefined variable 'LT_MIN'
+players/slider/cmd/lookup.c line 13: Undefined variable 'LT_SEC'
+players/slider/cmd/lookup.c line 12: Undefined variable 'LT_MON'
+players/slider/cmd/lookup.c line 12: Undefined variable 'LT_MDAY'
+players/slider/cmd/lookup.c line 12: Undefined variable 'LT_YEAR'
+players/slider/cmd/lookup.c line 13: Undefined variable 'LT_HOUR'
+players/slider/cmd/lookup.c line 13: Undefined variable 'LT_MIN'
+players/slider/cmd/lookup.c line 13: Undefined variable 'LT_SEC'
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/cmd/lookup.c line 12: Undefined variable 'LT_MON'
+players/slider/cmd/lookup.c line 12: Undefined variable 'LT_MDAY'
+players/slider/cmd/lookup.c line 12: Undefined variable 'LT_YEAR'
+players/slider/cmd/lookup.c line 13: Undefined variable 'LT_HOUR'
+players/slider/cmd/lookup.c line 13: Undefined variable 'LT_MIN'
+players/slider/cmd/lookup.c line 13: Undefined variable 'LT_SEC'
+players/slider/cmd/lookup.c line 12: Undefined variable 'LT_MON'
+players/slider/cmd/lookup.c line 12: Undefined variable 'LT_MDAY'
+players/slider/cmd/lookup.c line 12: Undefined variable 'LT_YEAR'
+players/slider/cmd/lookup.c line 13: Undefined variable 'LT_HOUR'
+players/slider/cmd/lookup.c line 13: Undefined variable 'LT_MIN'
+players/slider/cmd/lookup.c line 13: Undefined variable 'LT_SEC'
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/slist.c line 52: syntax error
+players/slider/obj/slist.c line 55: Illegal LHS
+players/slider/obj/slist.c line 55: syntax error
+players/slider/obj/slist.c line 57: Illegal LHS
+players/slider/obj/slist.c line 57: syntax error
+players/slider/obj/slist.c line 59: Illegal LHS
+players/slider/obj/slist2.c line 70: syntax error
+players/slider/obj/slist2.c line 37: Illegal lvalue
+players/slider/obj/slist2.c line 37: syntax error
+players/slider/obj/slist2.c line 136: End of file in string
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/rooms/control.c line 29: syntax error
+players/slider/rooms/control.c line 30: Illegal character constant
+players/slider/rooms/control.c line 41: End of file in string
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move_or_destruct() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.
+players/slider/obj/tshirt.c line 92: Warning: move() inherited from both /std/move.c (via /obj/armour.c) and /std/move.c; using the definition in /obj/armour.c.

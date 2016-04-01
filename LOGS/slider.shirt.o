@@ -1,0 +1,9 @@
+#/players/slider/obj/tshirt.c
+long_desc "It's a brand new Pixies t-shirt (worn)"
+name "t-shirt"
+short_desc "a Pixies t-shirt (worn)"
+short_desc_w "a Pixies t-shirt (worn) (worn)"
+type "other"
+weight 1
+id_list ({"t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other","t-shirt","t-shirt","other",})
+counter 398
